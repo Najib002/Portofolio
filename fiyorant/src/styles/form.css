@@ -1,0 +1,46 @@
+.restaurant .form-review {
+  width: 100%;
+  margin: 15px 0;
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.restaurant .form-review h3 {
+  text-align: center;
+}
+
+.restaurant .form-review .form-control{
+  padding: 5px;
+  width: 100%;
+  max-width: 100%;
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 14px;
+  background-clip: padding-box;
+}
+
+.restaurant .form-review .form-label {
+  margin: 2px;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.form-margin {
+  margin: 0.5em 1em 1.3em 1em;
+}
+
+.btn {
+  margin-top: 0 !important;
+  margin: 15px;
+  padding: 0.700em 0.75em;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  background-color: blue;
+  border: 1px solid transparent;
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: medium;
+  border-radius: 0.276em;
+  cursor: pointer;
+  text-decoration: none;
+}

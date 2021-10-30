@@ -1,0 +1,221 @@
+.posts {
+  display: grid;
+  grid-row-gap: 16px;
+  padding-right: 10px;
+}
+
+/* Mobile */
+@media screen and (max-width: 576px) {
+  nav ul {
+    position: absolute;
+    flex-direction: column;
+    right: 0;
+    top: 0;
+    width: 75% !important;
+    height: 65vh;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff;
+    -webkit-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
+    opacity: 0;
+  }
+
+  #menuBar:hover {
+    color: black;
+    z-index: 100;
+  }
+
+  #menuBar:active {
+    color: black;
+    z-index: 100;
+  }
+
+  #menuBar:visited {
+    color: black;
+    z-index: 100;
+  }
+
+  nav ul li a {
+    font-size: 18px;
+    color: rgb(43, 43, 43);
+    border-bottom: 1px solid #000000;
+  }
+
+  nav ul li a:hover {
+    font-weight: bold;
+    color: #000000;
+  }
+
+  nav ul.open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+
+  .hero {
+    z-index: -100;
+    min-height: 300px;
+    background: url("/heros/hero-small.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .restaurant .restaurant-title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .posts {
+    margin: 10px;
+    text-align: left;
+    overflow: hidden;
+  }
+
+  .post-item {
+    margin: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    overflow: hidden;
+    align-items: center;
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 320px) {
+  .restaurant .restaurant-reviews {
+      margin: 0;
+  }
+
+  .restaurant .restaurant-reviews table td, table th {
+      padding: 4px;
+      text-align: left;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  #menuBar {
+    display: none;
+  }
+
+  .hero {
+    z-index: -100;
+    min-height: 350px;
+    background: url("/heros/hero-large.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .posts {
+    margin: 20px;
+    text-align: left;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .restaurant-title {
+    font-size: 20px;
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+  nav ul {
+    width: 45%;
+  }
+
+  .restaurant .restaurant-poster {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    max-width: 100%;
+  }
+
+  .restaurant .restaurant-info {
+    margin: 0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+  }
+
+  .restaurant .restaurant-menus .foods ul,
+  .foods h4 {
+    margin: 0;
+    align-items: center;
+  }
+
+  .restaurant .restaurant-menus .drinks ul,
+  .drinks h4 {
+    margin: 0;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .restaurant {
+    grid-template-columns: auto 1fr;
+  }
+
+  .posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 16px;
+  }
+
+  .post-item {
+    margin: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    overflow: hidden;
+    align-items: center;
+    position: relative;
+  }
+
+  .post-item_contents {
+    padding: 16px 32px 32px 32px;
+  }
+
+  .post-item_title {
+    font-size: 20px;
+  }
+
+  .post-item_desc {
+    font-size: 14px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5; /* number of lines to show */
+    -webkit-box-orient: vertical;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .posts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero {
+    z-index: -100;
+    min-height: 350px;
+    background: url("/heros/hero-xl.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .posts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .post-item {
+    margin: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    overflow: hidden;
+    align-items: center;
+    position: relative;
+  }
+}
