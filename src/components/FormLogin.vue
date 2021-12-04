@@ -16,6 +16,7 @@
             placeholder="Email"
             aria-describedby="emailHelp"
             v-model="email"
+            required
           />
           <span class="text-xs text-red-700" id="emailHelp"></span>
         </div>
@@ -35,6 +36,7 @@
             id="password"
             type="password"
             placeholder="*******"
+            required
           />
 
           <span class="text-xs text-red-700" id="passwordHelp"></span>
@@ -72,10 +74,13 @@ export default {
       };
       axios.post('https://reqres.in/api/login', formInput, { headers })
       .then(response => {
-        alert('Success logging in, your token is: ' + response.data.token);
+          alert('Success logging in, your token is: ' + response.data.token);
       })
       .catch(error => {
-        console.log(error);
+        if(error){
+          console.log(error);
+          alert('Wrong email or password!');
+        }
       })
     },
   },
