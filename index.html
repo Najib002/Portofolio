@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              screens: {
+                'xs': '375px',
+              }
+            }
+          }
+        }
+    </script>
+    <title>Home | CryptPay</title>
+</head>
+<body>
+<!-- NAVBAR -->
+  <nav class="fixed left-0 right-0 top-0 bg-white shadow-lg px-3 xs:px-4 py-4 z-30">
+    <div class="flex flex-row">
+      <div class="flex flex-row items-center">
+        <a href="/" class="flex items-center py-3">
+          <img class="flex w-10 h-auto items-center" src="./assets/images/cryptpay.svg" alt="Main logo"/>
+          <div class="hidden lg:flex">
+              <span class="font-bold text-emerald-700 text-lg lg:text-2xl px-1">CryptPay</span>
+          </div>
+        </a>
+        <div class="hidden md:flex mx-8">
+          <a href="#trade" class="text-md lg:text-xl mx-3 lg:mx-5 font-semibold hover:font-bold duration-300">
+            Trade
+          </a>
+          <a href="#earn" class="text-md lg:text-xl mx-3 lg:mx-5 font-semibold hover:font-bold duration-300">
+            Earn
+          </a>
+          <a href="#referral" class="text-md lg:text-xl mx-3 lg:mx-5 font-semibold hover:font-bold duration-300">
+            Referral
+          </a>
+          <a href="#nfts" class="text-md lg:text-xl mx-3 lg:mx-5 font-semibold hover:font-bold duration-300">
+            NFTs
+          </a>
+        </div>
+      </div>
+      <div class="flex items-center">
+        <div class="flex flex-row items-center absolute right-3 xs:right-6">
+          <a href="#" class="hidden md:flex items-center mx-6">
+            <img class="w-6 h-auto hover:w-7 duration-300" src="./assets/images/cryptpay.svg" alt="Main logo"/>
+            <span class="font-semibold text-black-800 text-md px-2">$0.280</span>
+          </a>
+          <img class="w-8 h-auto cursor-pointer" src="./assets/icons/language.svg" alt="Language"/>
+          <a href="#" class="py-2 px-4 ml-4 xs:ml-6 font-medium text-white bg-emerald-800 rounded-full hover:bg-green-500 duration-300">Connect Wallet</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <nav class="fixed sm:hidden bottom-0 right-0 left-0 right-0 bg-white border-t border-gray-300 px-4 py-2 z-50">
+    <div class="grid grid-cols-4">
+      <a href="#trade" class="flex flex-col items-center py-2">
+        <img class="flex w-5 xs:w-7 h-auto items-center" src="./assets/icons/trade.svg" alt="Trade"/>
+        <span class="font-semibold hover:font-bold text-xs xs:text-sm px-2">Trade</span>
+      </a>
+      <a href="#earn" class="flex flex-col items-center py-2">
+        <img class="flex w-5 xs:w-7 h-auto items-center" src="./assets/icons/earnings.svg" alt="Earn"/>
+        <span class="font-semibold hover:font-bold text-xs xs:text-sm px-2">Earn</span>
+      </a>
+      <a href="#referral" class="flex flex-col items-center py-2">
+        <img class="flex w-5 xs:w-7 h-auto items-center" src="./assets/icons/coupon.svg" alt="Referral"/>
+        <span class="font-semibold hover:font-bold text-xs xs:text-sm px-2">Referral</span>
+      </a>
+      <a href="#nfts" class="flex flex-col items-center py-2">
+        <img class="flex w-5 xs:w-7 h-auto items-center" src="./assets/icons/blockchain.svg" alt="NFTs"/>
+        <span class="font-semibold hover:font-bold text-xs xs:text-sm px-2">NFTs</span>
+      </a>
+    </div>
+  </nav>
+<!-- END NAVBAR -->
+
+<!-- CONTENT -->
+  <main class="flex flex-col mx-3 sm:mx-10 xl:mx-24 my-36">
+    <div class="flex flex-col xs:flex-row items-center w-full justify-center md:justify-start">
+      <div class="my-4">
+        <button type="button" class="bg-gray-200 rounded-full w-12 h-auto px-2 py-1">
+          <div class="bg-white rounded-full outline hover:outline-green-400 w-4 h-auto py-2"></div>
+        </button>
+        <span class="text-md text-emerald-800 mx-2">Staked only</span>
+      </div>
+      <div class="flex flex-row items-center bg-gray-200 rounded-full xs:mx-4">
+        <a href="#" class="font-bold bg-gray-800 rounded-full text-white text-lg hover:bg-gray-500 px-3 py-1">Live</a>
+        <a href="#" class="font-bold text-gray-800 text-lg px-3 py-1 hover:text-gray-500 duration-300">Finished</a>
+      </div>
+    </div>
+    <div class="grid grid-rows-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8 my-6">
+      <div class="rounded-2xl bg-white shadow-lg border border-gray-300 z-0">
+        <div class="px-6 pt-6 flex flex-row justify-between">
+          <div class="relative">
+            <img class="absolute top-0 left-0 w-8 h-auto -z-10" src="./assets/images/zcash.svg" alt="Zcash coin"/>
+            <img class="static flex w-12 h-auto mx-4 my-2 z-20" src="./assets/images/cryptpay.svg" alt="Main logo"/>
+          </div>
+          <div class="grid grid-cols-2 justify-items-end space-x-1 space-y-2">
+            <h5 class="col-span-2 text-emerald-700 text-xl font-bold">CPY-ZCH</h5>
+            <div class="flex flex-row items-center bg-white outline text-green-500 rounded-full px-2 space-x-1">
+              <img class="w-6 h-auto" src="./assets/icons/verified.svg" alt="Core" />
+              <span class="text-sm font-medium">Core</span>
+            </div>
+            <span class="bg-green-500 text-white rounded-full px-2">14350X</span>
+          </div>
+        </div>
+        <div class="px-6 py-5 grid grid-cols-2 grid-rows-1">
+          <p class="text-emerald-800 text-md font-medium">
+            APY:
+          </p>
+          <a href="#" class="flex flex-row items-center justify-end text-emerald-800 hover:text-green-500 space-x-3">
+            <span class="text-md font-bold">1,087.90%</span>
+            <img class="w-5 h-auto" src="./assets/icons/calculator.svg" alt="Calculator" />
+          </a>
+          <p class="text-emerald-800 text-md font-medium mt-1">
+            Earn:
+          </p>
+          <p class="flex items-center justify-end text-emerald-800 text-md font-bold mt-1">
+            CPY+Fees
+          </p>
+          <p class="text-emerald-800 text-md font-medium mt-1">
+            Harvest Lockup:
+          </p>
+          <p class="flex items-center justify-end text-emerald-800 text-md font-bold mt-1">
+            12 Hour (s)
+          </p>
+          <p class="text-xs font-medium mt-4">
+            <span class="text-green-500">CPY</span>
+            <span class="text-gray-700">EARNED</span>
+          </p>
+          <p></p>
+          <p class="text-gray-400 text-xl font-bold mt-4">
+            0.000
+          </p>
+          <button type="button" disabled class="cursor-not-allowed bg-gray-200 text-gray-400 font-bold rounded-lg ml-10 mt-2 py-3">Harvest</button>
+          <p class="text-xs font-medium mt-4">
+            <span class="text-green-500">CPY-ZCH</span>
+            <span class="text-gray-700">STAKED</span>
+          </p>
+          <p></p>
+          <a href="#" class="flex justify-center p-4 col-span-2 font-medium text-white bg-emerald-800 rounded-lg hover:bg-green-500 duration-300 mt-2">
+            Connect Wallet
+          </a>
+        </div>
+        <div class="px-6 py-4 flex flex-col border-t">
+          <a href="#" class="flex justify-center text-emerald-800 text-lg font-bold cursor-pointer">
+            Details
+            <img class="w-6 h-auto my-1" src="./assets/icons/arrow-down.svg" alt="Arrow down"/>
+          </a>
+        </div>
+      </div>
+      <div class="rounded-2xl bg-white shadow-lg border border-gray-300 z-0">
+        <div class="px-6 pt-6 flex flex-row justify-between">
+          <div class="relative">
+            <img class="absolute top-0 left-0 w-8 h-auto -z-10" src="./assets/images/litecoin.svg" alt="Litecoin"/>
+            <img class="static flex w-12 h-auto mx-4 my-2 z-20" src="./assets/images/cryptpay.svg" alt="Main logo"/>
+          </div>
+          <div class="grid grid-cols-2 justify-items-end space-x-1 space-y-2">
+            <h5 class="col-span-2 text-emerald-700 text-xl font-bold">CPY-LTC</h5>
+            <div class="flex flex-row items-center bg-white outline text-green-500 rounded-full px-2 space-x-1">
+              <img class="w-6 h-auto" src="./assets/icons/verified.svg" alt="Core" />
+              <span class="text-sm font-medium">Core</span>
+            </div>
+            <span class="bg-green-500 text-white rounded-full px-2">12600X</span>
+          </div>
+        </div>
+        <div class="px-6 py-5 grid grid-cols-2 grid-rows-1">
+          <p class="text-emerald-800 text-md font-medium">
+            APY:
+          </p>
+          <a href="#" class="flex flex-row items-center justify-end text-emerald-800 hover:text-green-500 space-x-3">
+            <span class="text-md font-bold">1,131.87%</span>
+            <img class="w-5 h-auto" src="./assets/icons/calculator.svg" alt="Calculator" />
+          </a>
+          <p class="text-emerald-800 text-md font-medium mt-1">
+            Earn:
+          </p>
+          <p class="flex items-center justify-end text-emerald-800 text-md font-bold mt-1">
+            CPY+Fees
+          </p>
+          <p class="text-emerald-800 text-md font-medium mt-1">
+            Harvest Lockup:
+          </p>
+          <p class="flex items-center justify-end text-emerald-800 text-md font-bold mt-1">
+            12 Hour (s)
+          </p>
+          <p class="text-xs font-medium mt-4">
+            <span class="text-green-500">CPY</span>
+            <span class="text-gray-700">EARNED</span>
+          </p>
+          <p></p>
+          <p class="text-gray-400 text-xl font-bold mt-4">
+            0.000
+          </p>
+          <button type="button" disabled class="cursor-not-allowed bg-gray-200 text-gray-400 font-bold rounded-lg ml-10 mt-2 py-3">Harvest</button>
+          <p class="text-xs font-medium mt-4">
+            <span class="text-green-500">CPY-LTC</span>
+            <span class="text-gray-700">STAKED</span>
+          </p>
+          <p></p>
+          <a href="#" class="flex justify-center p-4 col-span-2 font-medium text-white bg-emerald-800 rounded-lg hover:bg-green-500 duration-300 mt-2">
+            Connect Wallet
+          </a>
+        </div>
+        <div class="px-6 py-4 flex flex-col border-t">
+          <a href="#" class="flex justify-center text-emerald-800 text-lg font-bold cursor-pointer">
+            Details
+            <img class="w-6 h-auto my-1" src="./assets/icons/arrow-down.svg" alt="Arrow down"/>
+          </a>
+        </div>
+      </div>
+      <div class="rounded-2xl bg-white shadow-lg border border-gray-300 z-0">
+        <div class="px-6 pt-6 flex flex-row justify-between">
+          <div class="relative">
+            <img class="absolute top-0 left-0 w-8 h-auto -z-10" src="./assets/images/waves.svg" alt="Waves coin"/>
+            <img class="static flex w-12 h-auto mx-4 my-2 z-20" src="./assets/images/cryptpay.svg" alt="Main logo"/>
+          </div>
+          <div class="grid grid-cols-2 justify-items-end space-x-1 space-y-2">
+            <h5 class="col-span-2 text-emerald-700 text-xl font-bold">CPY-WSC</h5>
+            <div class="flex flex-row items-center bg-white outline text-green-500 rounded-full px-2 space-x-1">
+              <img class="w-6 h-auto" src="./assets/icons/verified.svg" alt="Core" />
+              <span class="text-sm font-medium">Core</span>
+            </div>
+            <span class="bg-green-500 text-white rounded-full px-2">2940X</span>
+          </div>
+        </div>
+        <div class="px-6 py-5 grid grid-cols-2 grid-rows-1">
+          <p class="text-emerald-800 text-md font-medium">
+            APY:
+          </p>
+          <a href="#" class="flex flex-row items-center justify-end text-emerald-800 hover:text-green-500 space-x-3">
+            <span class="text-md font-bold">729.65%</span>
+            <img class="w-5 h-auto" src="./assets/icons/calculator.svg" alt="Calculator" />
+          </a>
+          <p class="text-emerald-800 text-md font-medium mt-1">
+            Earn:
+          </p>
+          <p class="flex items-center justify-end text-emerald-800 text-md font-bold mt-1">
+            CPY+Fees
+          </p>
+          <p class="text-emerald-800 text-md font-medium mt-1">
+            Harvest Lockup:
+          </p>
+          <p class="flex items-center justify-end text-emerald-800 text-md font-bold mt-1">
+            12 Hour (s)
+          </p>
+          <p class="text-xs font-medium mt-4">
+            <span class="text-green-500">CPY</span>
+            <span class="text-gray-700">EARNED</span>
+          </p>
+          <p></p>
+          <p class="text-gray-400 text-xl font-bold mt-4">
+            0.000
+          </p>
+          <button type="button" disabled class="cursor-not-allowed bg-gray-200 text-gray-400 font-bold rounded-lg ml-10 mt-2 py-3">Harvest</button>
+          <p class="text-xs font-medium mt-4">
+            <span class="text-green-500">CPY-WSC</span>
+            <span class="text-gray-700">STAKED</span>
+          </p>
+          <p></p>
+          <a href="#" class="flex justify-center p-4 col-span-2 font-medium text-white bg-emerald-800 rounded-lg hover:bg-green-500 duration-300 mt-2">
+            Connect Wallet
+          </a>
+        </div>
+        <div class="px-6 py-4 flex flex-col border-t">
+          <a href="#" class="flex justify-center text-emerald-800 text-lg font-bold cursor-pointer">
+            Details
+            <img class="w-6 h-auto my-1" src="./assets/icons/arrow-down.svg" alt="Arrow down"/>
+          </a>
+        </div>
+      </div>
+      <div class="rounded-2xl bg-white shadow-lg border border-gray-300 z-0">
+        <div class="px-6 pt-6 flex flex-row justify-between">
+          <div class="relative">
+            <img class="absolute top-0 left-0 w-8 h-auto -z-10" src="./assets/images/cryptpay.svg" alt="Main logo"/>
+            <img class="static flex w-12 h-auto mx-4 my-2 z-20" src="./assets/images/cryptpay.svg" alt="Main logo"/>
+          </div>
+          <div class="grid grid-cols-2 justify-items-end space-x-1 space-y-2">
+            <h5 class="col-span-2 text-emerald-700 text-xl font-bold">CPY NFT Pool (V1)</h5>
+            <div class="flex flex-row items-center bg-white outline text-green-500 rounded-full px-2 space-x-1">
+              <img class="w-6 h-auto" src="./assets/icons/verified.svg" alt="Core" />
+              <span class="text-sm font-medium">Core</span>
+            </div>
+            <span class="bg-green-500 text-white rounded-full px-2">4830X</span>
+          </div>
+        </div>
+        <div class="px-6 py-5 grid grid-cols-2 grid-rows-1">
+          <p class="text-emerald-800 text-md font-medium">
+            APY:
+          </p>
+          <a href="#" class="flex flex-row items-center justify-end text-emerald-800 hover:text-green-500 space-x-3">
+            <span class="text-md font-bold">942.78%</span>
+            <img class="w-5 h-auto" src="./assets/icons/calculator.svg" alt="Calculator" />
+          </a>
+          <p class="text-emerald-800 text-md font-medium mt-1">
+            Earn:
+          </p>
+          <p class="flex items-center justify-end text-emerald-800 text-md font-bold mt-1">
+            CPY+Fees
+          </p>
+          <p class="text-emerald-800 text-md font-medium mt-1">
+            Harvest Lockup:
+          </p>
+          <p class="flex items-center justify-end text-emerald-800 text-md font-bold mt-1">
+            12 Hour (s)
+          </p>
+          <p class="text-xs font-medium mt-4">
+            <span class="text-green-500">CPY</span>
+            <span class="text-gray-700">EARNED</span>
+          </p>
+          <p></p>
+          <p class="text-gray-400 text-xl font-bold mt-4">
+            0.000
+          </p>
+          <button type="button" disabled class="cursor-not-allowed bg-gray-200 text-gray-400 font-bold rounded-lg ml-10 mt-2 py-3">Harvest</button>
+          <p class="text-xs font-medium mt-4">
+            <span class="text-green-500">CPY-NFTs</span>
+            <span class="text-gray-700">STAKED</span>
+          </p>
+          <p></p>
+          <a href="#" class="flex justify-center p-4 col-span-2 font-medium text-white bg-emerald-800 rounded-lg hover:bg-green-500 duration-300 mt-2">
+            Connect Wallet
+          </a>
+        </div>
+        <div class="px-6 py-4 flex flex-col border-t">
+          <a href="#" class="flex justify-center text-emerald-800 text-lg font-bold cursor-pointer">
+            Details
+            <img class="w-6 h-auto my-1" src="./assets/icons/arrow-down.svg" alt="Arrow down"/>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+<!-- END CONTENT -->
+
+<!-- FOOTER -->
+  <footer class="bottom-0 right-0 left-0 right-0 bg-gray-700 py-10 -mt-24 mb-16 sm:-mb-0">
+    <div class="grid grid-rows-1 sm:grid-cols-2 lg:grid-cols-3 mx-10">
+      <a href="/" class="flex flex-col items-center my-4">
+        <img class="flex w-24 h-auto items-center" src="./assets/images/cryptpay.svg" alt="Main logo"/>
+        <div class="flex">
+            <span class="font-bold text-green-500 text-lg lg:text-2xl px-1">CryptPay</span>
+        </div>
+      </a>
+      <div class="grid grid-cols-5 content-center justify-items-center my-6">
+        <a href="https://twitter.com/">
+          <img class="flex w-10 h-auto items-center" src="./assets/icons/twitter.svg" alt="Twitter logo"/>
+        </a>
+        <a href="https://facebook.com/">
+          <img class="flex w-10 h-auto items-center" src="./assets/icons/facebook.svg" alt="Facebook logo"/>
+        </a>
+        <a href="https://instagram.com/">
+          <img class="flex w-10 h-auto items-center" src="./assets/icons/instagram.svg" alt="Instagram logo"/>
+        </a>
+        <a href="https://telegram.com/">
+          <img class="flex w-9 h-auto m-1" src="./assets/icons/telegram.svg" alt="Telegram logo"/>
+        </a>
+        <a href="https://linkedin.com/">
+          <img class="flex w-10 h-auto items-center" src="./assets/icons/linkedin.svg" alt="Linkedin logo"/>
+        </a>
+        </div>
+      <div class="grid grid-rows-2 md:col-span-2 lg:col-span-1 space-y-4 lg:space-y-0">
+        <div class="flex flex-row items-center justify-center -mb-4">
+          <img class="flex w-auto h-10 items-center" src="./assets/icons/location.svg"/>
+          <span class=" flex items-center text-white text-xl font-bold">Jakarta, Indonesia</span>
+        </div>
+        <div class="flex flex-row items-center justify-center -mt-4">
+          <img class="flex w-auto h-8 items-center" src="./assets/icons/copyright.svg"/>
+          <span class=" flex items-center text-white text-lg font-bold">2022 CryptPay</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+<!-- END FOOTER -->
+</body>
+</html>
