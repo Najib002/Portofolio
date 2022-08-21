@@ -6,12 +6,13 @@ import "slick-carousel/slick/slick-theme.css";
 
 function ContentList({ contents }) {
   const settings = {
-    dots: true,
     infinite: true,
-    speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
     arrows: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    pauseOnHover: true,
     responsive: [
       {
         breakpoint: 1025,
@@ -20,6 +21,9 @@ function ContentList({ contents }) {
           slidesToScroll: 1,
           infinite: true,
           arrows: true,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          pauseOnHover: true,
         },
       },
     ],
