@@ -12,7 +12,7 @@ function NavBar() {
                 src="/images/main-logo.svg"
                 alt="Main logo"
               />
-              <div className="hidden lg:flex">
+              <div className="flex">
                 <span className="font-bold text-white text-lg lg:text-3xl px-3">
                   Arkademi
                 </span>
@@ -53,17 +53,17 @@ function NavBar() {
           </div>
         </div>
       </nav>
-      <nav className="visible lg:invisible fixed left-0 right-0 top-0 bg-old-blue shadow-lg px-3 py-4">
-        <div className="relative mx-12">
+      <nav className="visible lg:invisible fixed left-0 right-0 top-0 bg-old-blue shadow-lg px-3 py-4 z-30">
+        <div className="relative">
           <div className="flex flex-row justify-center items-center">
             <a href="/" className="flex items-center py-3 px-4">
               <img
-                className="flex w-8 md:w-10 h-auto mx-6 md:mx-1 items-center"
+                className="flex w-8 md:w-10 h-auto mx-2 items-center"
                 src="/images/main-logo.svg"
                 alt="Main logo"
               />
-              <div className="hidden md:flex">
-                <span className="font-bold text-white text-3xl px-3">
+              <div className="flex">
+                <span className="font-bold text-white text-3xl">
                   Arkademi
                 </span>
               </div>

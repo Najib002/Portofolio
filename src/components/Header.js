@@ -1,6 +1,17 @@
 import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function Header() {
+  const settings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+  };
+
   return (
     <>
       <div className="flex flex-row mt-28 justify-center">
@@ -59,51 +70,63 @@ function Header() {
           </a>
         </div>
       </div>
-      <div className="flex flex-col mt-12 justify-center mx-auto max-w-2xl lg:max-w-4xl xl:max-w-full xl:mx-24">
-        <img
-          className="flex w-full h-auto rounded-3xl"
-          src="/images/header.jpeg"
-          alt="Header"
-        />
-        <div className="flex flex-row mr-4 my-6 justify-center">
-          <div className="relative w-1/2 mx-2 h-auto">
-            <img
-              className="w-full h-auto mx-3 rounded-3xl"
-              src="/images/header-content-1.jpeg"
-              alt="Header"
-            />
-            <span className="absolute top-8 2xl:top-12 left-6 text-black text-md xl:text-xl font-bold">
-              Menjadi ahli<span className="text-old-blue"> Akuntansi</span>
-            </span>
-          </div>
-          <div className="relative w-1/2 mx-2 h-auto">
-            <img
-              className="w-full h-auto mx-3 rounded-3xl"
-              src="/images/header-content-2.jpeg"
-              alt="Header"
-            />
-            <span className="absolute top-6 2xl:top-12 left-6 text-black text-md xl:text-xl font-bold">
-              Menjadi ahli
-              <span className="text-old-blue">
-                {" "}
-                K3 (Kesehatan & Keselamatan Kerja)
+      <div className="flex flex-col mt-12 justify-center mx-12 max-w-1/2 xl:mx-24">
+        <Slider {...settings}>
+          <img
+            className="flex w-full h-auto rounded-3xl"
+            src="/images/header.jpeg"
+            alt="Header"
+          />
+          <img
+            className="flex w-full h-auto rounded-3xl"
+            src="/images/header.jpeg"
+            alt="Header"
+          />
+          <img
+            className="flex w-full h-auto rounded-3xl"
+            src="/images/header.jpeg"
+            alt="Header"
+          />
+        </Slider>
+        <div className="flex flex-col xl:flex-row mr-4 my-6 justify-center items-center">
+            <div className="relative w-1/2 mx-2 my-2 lg:my-4 h-auto">
+              <img
+                className="w-full h-auto mx-3 rounded-3xl"
+                src="/images/header-content-1.jpeg"
+                alt="Header"
+              />
+              <span className="absolute top-8 2xl:top-12 left-6 text-black text-md xl:text-xl font-bold">
+                Menjadi ahli<span className="text-old-blue"> Akuntansi</span>
               </span>
-            </span>
-          </div>
-          <div className="relative w-1/2 mx-2 h-auto">
-            <img
-              className="w-full h-auto mx-3 rounded-3xl"
-              src="/images/header-content-3.jpeg"
-              alt="Header"
-            />
-            <span className="absolute top-5 2xl:top-12 left-6 text-black text-md xl:text-xl font-bold">
-              Menjadi ahli
-              <span className="text-old-blue">
-                {" "}
-                Kesehatan, Keselamatan Kerja & Perlindungan Lingkungan (K3LL)
+            </div>
+            <div className="relative w-1/2 mx-2 my-2 lg:my-4 h-auto">
+              <img
+                className="w-full h-auto mx-3 rounded-3xl"
+                src="/images/header-content-2.jpeg"
+                alt="Header"
+              />
+              <span className="absolute top-6 2xl:top-12 left-6 text-black text-md xl:text-xl font-bold">
+                Menjadi ahli
+                <span className="text-old-blue">
+                  {" "}
+                  K3 (Kesehatan & Keselamatan Kerja)
+                </span>
               </span>
-            </span>
-          </div>
+            </div>
+            <div className="relative w-1/2 mx-2 my-2 lg:my-4 h-auto">
+              <img
+                className="w-full h-auto mx-3 rounded-3xl"
+                src="/images/header-content-3.jpeg"
+                alt="Header"
+              />
+              <span className="absolute top-5 2xl:top-12 left-6 text-black text-md xl:text-xl font-bold">
+                Menjadi ahli
+                <span className="text-old-blue">
+                  {" "}
+                  Kesehatan, Keselamatan Kerja & Perlindungan Lingkungan (K3LL)
+                </span>
+              </span>
+            </div>
         </div>
         <a
           href="#spesialisasi"

@@ -4,15 +4,15 @@ import './styles/index.css';
 import reportWebVitals from './reportWebVitals';
 import NavBar from './components/NavBar.js';
 import Header from './components/Header';
-import Content from './components/Content';
 import Footer from './components/Footer';
+import ContentApp from './components/ContentApp';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <NavBar />
       <Header />
-      <Content />
+      <ContentApp />
     <Footer />
   </React.StrictMode>
 );
