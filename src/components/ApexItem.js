@@ -1,7 +1,7 @@
 import React from "react";
 import ApexItemBody from "./ApexItemBody";
 
-function ApexItem({ name, type, quote, nickname, thumbnail, home, age, desc }) {
+function ApexItem({ name, type, quote, nickname, thumbnail, home, age, desc, ability }) {
   return (
     <>
       <div className="rounded-lg shadow-xl bg-white max-w-sm my-8">
@@ -14,6 +14,7 @@ function ApexItem({ name, type, quote, nickname, thumbnail, home, age, desc }) {
           home={home}
           age={age}
           desc={desc}
+          ability={ability}
         />
       </div>
     </>

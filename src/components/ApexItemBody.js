@@ -10,6 +10,7 @@ function ApexItemBody({
   home,
   age,
   desc,
+  ability
 }) {
   const [isModalOpen, setModalOpen] = useState(false);
   const handleSetModal = () => setModalOpen(!isModalOpen);
@@ -45,6 +46,7 @@ function ApexItemBody({
         nickname={nickname}
         age={age}
         quote={quote}
+        ability={ability}
         isOpen={isModalOpen}
         toggleModal={handleSetModal}
       />
